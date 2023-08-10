@@ -20,14 +20,18 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
+    "leaflet": "^1.9.3",
+    "leaflet-heatmap": "^1.0.0",
     "next": "13.4.1",
     "postcss": "8.4.23",
+    "proj4": "^2.9.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-leaflet": "^4.2.0",
+    "react-tweet": "^3.0.4",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
-  },
-  "devDependencies": {
   },
   "author": "",
   "license": "MIT"

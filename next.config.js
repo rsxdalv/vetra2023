@@ -28,6 +28,7 @@ const nextConfig = {
   //   return config
   // },
   reactStrictMode: true,
-}
+  transpilePackages: ["react-tweet"],
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
