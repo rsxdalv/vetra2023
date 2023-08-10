@@ -1,9 +1,9 @@
 // import Map from "@components/Map";
 import { css } from "@emotion/css";
 import Map from "../components/Map";
-import data from "../../build/disconnects.json";
+// import data from "../../build/disconnects.json";
 import proj4 from "proj4";
-import { Tweet, TweetMediaVideo } from "react-tweet";
+import { Tweet } from "react-tweet";
 
 const DEFAULT_CENTER = [56.62453288440317, 23.28223156339783];
 proj4.defs(
@@ -14,6 +14,8 @@ proj4.defs(
   "EPSG:3857",
   "+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs +type=crs"
 );
+
+const data = [];
 
 const disconnects = data.disconnects.map((x) => {
   x.lat = parseFloat(x.lat as string);
