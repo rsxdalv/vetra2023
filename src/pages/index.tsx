@@ -392,21 +392,13 @@ export default function Home() {
                   </Popup>
                 </Marker>
               ))} */}
-            {tweets.map((id) => (
-              <Marker position={id.position}>
+            {tweets.map((data) => (
+              <Marker position={data.position} key={data.url}>
                 <Popup>
-                  <Tweet id={id.id} />
+                  <Tweet id={data.id} />
                 </Popup>
               </Marker>
             ))}
-            <Marker position={[56.40017552492367, 23.251678583070632]}>
-              <Popup>
-                {/* https://twitter.com/Centinela_35/status/1688947067748577282?s=20 */}
-                {/* https://twitter.com/i/status/1688947067748577282 */}
-                <Tweet id="1688947067748577282" />
-                {/* <TweetMediaVideo tweet={{ id: "1688947067748577282" }} /> */}
-              </Popup>
-            </Marker>
           </>
         )}
       </Map>
